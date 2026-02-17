@@ -220,7 +220,7 @@ class MusicBot(commands.Cog):
             print(f"Error handling web action {action}: {e}")
 
 async def run_bot():
-    bot.add_cog(MusicBot(bot))
+    await bot.add_cog(MusicBot(bot))
     await bot.start(os.getenv('DISCORD_TOKEN'))
 
 def run_flask():
